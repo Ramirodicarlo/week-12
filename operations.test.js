@@ -43,7 +43,7 @@ describe("Subtraction between two numbers", () =>{
         expect(op.resta(-1,2)).toBe(-3)
     })
     test("Sustraction of 2 and 1.54 = 0.46",() =>{
-        expect(op.resta(2,1.54)).toBe(0.46)
+        expect(op.resta(2,1.54)).toBeCloseTo(0.46)
     })
     test("Sustraction of a and b = NaN",() =>{
         expect(op.resta("a","b")).toBe(NaN)
